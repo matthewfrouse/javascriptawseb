@@ -52,7 +52,9 @@ app.get('/bad', (req, res) => {
 });
 
 
-// set up listener on port 3000
-app.listen(3000, () => {
-    console.log('Server is up on port 3000');
+// set up listener on port from environment or 3000
+var port = process.env.PORT || 3000;
+
+app.listen(port, () => {
+    console.log('Server is up on port: ' + port);
 });
