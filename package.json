@@ -1,0 +1,24 @@
+{
+  "name": "javascriptawseb",
+  "version": "1.0.0",
+  "description": "test javascript app for AWS EB and pipeline",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewfrouse/javascriptawseb.git"
+  },
+  "author": "Matthew F. Rouse",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matthewfrouse/javascriptawseb/issues"
+  },
+  "homepage": "https://github.com/matthewfrouse/javascriptawseb#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "hbs": "^4.0.1"
+  }
+}
