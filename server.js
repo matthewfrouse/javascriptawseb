@@ -32,8 +32,8 @@ app.get('/', (req, res) => {
     //res.send('<h1>Hello Thames Valley not Silicon Valley</h1>');
     //render the home page via handlebar
     res.render('home.hbs', {
-        pageTitle: 'HOME Page for Thames Valley not Silicon Valley',
-        welcomeMessage: 'Welcome to the Home page for Thames Valley not Silicon Valley'
+        pageTitle: 'Hello World! - HOME Page for Thames Valley not Silicon Valley',
+        welcomeMessage: 'Hello World! Welcome to the Home page for Thames Valley not Silicon Valley'
     });
 });
 
