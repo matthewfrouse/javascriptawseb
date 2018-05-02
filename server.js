@@ -33,7 +33,7 @@ app.get('/', (req, res) => {
     //render the home page via handlebar
     res.render('home.hbs', {
         pageTitle: 'Hello World! - HOME Page for Thames Valley not Silicon Valley',
-        welcomeMessage: 'Hello World! Welcome to the Home page for Thames Valley not Silicon Valley'
+        welcomeMessage: 'Hello World! Welcome to the Home page for Thames Valley not Silicon Valley. Change 05 - 2018/05/02'
     });
 });
 
