@@ -29,12 +29,13 @@ app.use(express.static(__dirname));
 
 // register handler for root - set up the get request response - '/' root route with request and response
 app.get('/', (req, res) => {
-    //res.send('<h1>Hello Thames Valley not Silicon Valley</h1>');
+    //simple send
+    res.send('<h1>Hello Thames Valley not Silicon Valley (Pat. Pending) ! - change 07 - 2018/05/16</h1>');
     //render the home page via handlebar
-    res.render('home.hbs', {
-        pageTitle: 'Hello World! - HOME Page for Thames Valley not Silicon Valley',
-        welcomeMessage: 'Hello World! Welcome to the Home page for Thames Valley not Silicon Valley. Change 05 - 2018/05/02'
-    });
+    //res.render('home.hbs', {
+    //    pageTitle: 'Hello World! - HOME Page for Thames Valley not Silicon Valley',
+    //    welcomeMessage: 'Hello World! Welcome to the Home page for Thames Valley not Silicon Valley. Change 06 - 2018/05/10'
+    //});
 });
 
 // register handler - set up an about page - root/about
@@ -58,3 +59,6 @@ var port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log('Server is up on port: ' + port);
 });
+
+//exports
+module.exports.app = app;
