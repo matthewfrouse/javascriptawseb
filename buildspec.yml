@@ -13,7 +13,7 @@ phases:
     commands:
       - echo Building on `date` ...
       - echo building node
-      - mocha server.test.js
+      - mocha server.test.js --exit
   post_build:
     commands:
       - echo Build completed on `date`
