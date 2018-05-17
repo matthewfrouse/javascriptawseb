@@ -1,14 +1,19 @@
 # Do not change version. This is the version of aws buildspec, not the version of your buildspec file.
 version: 0.2
 phases:
+  install:
+    commands:
+      - echo Installing Mocha ...
+      - npm install mocha -g
   pre_build:
     commands:
-      - echo Installing ...
+      - echo Installing source NPM dependecies ...
       - npm install
   build:
     commands:
-      - echo Building ...
-#      - npm run build
+      - echo Building on `date` ...
+      - echo building node
+      - mocha server.test.js
   post_build:
     commands:
       - echo Build completed on `date`
